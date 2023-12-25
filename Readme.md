@@ -32,7 +32,7 @@ r	=	distance between centers of the masses
 
 The N-body problem presents a significant challenge when more than two objects are involved. The complexity of this problem increases exponentially as the number of objects increases, making it an extremely hard task to compute and predict the future trajectories of these objects. The primary difficulty lies in the fact that many unknown variables are at play in the situation. Thus, the task of determining the behavior of these objects becomes incredibly tedious, given the limited number of known equations available to calculate these unknowns. The result is an intricate puzzle that requires advanced computational methods to solve, further adding to the problem's difficulty.
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled.png)
+![Untitled](Images/Untitled.png)
 
 ### Mathematical solution
 
@@ -439,7 +439,7 @@ void bodyForce(Particle *p, float dt, int n) {
 
 This code represents a sequential implementation of the N-body problem simulation, where particles interact with each other through gravitational forces over a specified number of iterations. The program reads initial particle data from a file, performs the simulation, measures and prints timing information, optionally prints the initial and final states of particles, writes the final state to a file, and deallocates memory before termination.
 
-![The following image does not present the actual output of the decode but the graphical implementation of an N-Body simulation ](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%201.png)
+![The following image does not present the actual output of the decode but the graphical implementation of an N-Body simulation ](Images/Untitled%201.png)
 
 The following image does not present the actual output of the decode but the graphical implementation of an N-Body simulation 
 
@@ -704,7 +704,7 @@ Parallelizing sequential N-body simulations is crucial for enhancing computation
     
     - **Explanation:** The final particle data is written to "openmp_output.txt" in binary format. Memory allocated for particles is freed.
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%202.png)
+![Untitled](Images/Untitled%202.png)
 
 This parallelized version aims to distribute the computational workload among multiple threads using OpenMP, improving the efficiency of the N-body simulation.
 
@@ -1354,7 +1354,7 @@ for i in range(1000, 11000, 1000):
 
 results: 
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%203.png)
+![Untitled](Images/Untitled%203.png)
 
 ---
 
@@ -1489,7 +1489,7 @@ double getCurrentTime() {
 
 This code parallelizes the force computation step using pthreads, aiming to improve the efficiency of the N-body simulation by leveraging multiple threads for concurrent execution.
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%204.png)
+![Untitled](Images/Untitled%204.png)
 
 Parallelization techniques are crucial to utilize modern computing power and tackle complex simulations. They allow larger, higher resolution simulations, advancing fields like astrophysics and climate modeling. Thus, parallelization is key in enhancing simulation capabilities and scientific understanding.
 
@@ -1497,7 +1497,7 @@ Parallelization techniques are crucial to utilize modern computing power and tac
 
 # Chapter 4: Analysis
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%205.png)
+![Untitled](Images/Untitled%205.png)
 
 | Particle Count |  | Sequential (s) | MPI (s) using 4 Processors | Pthreads (s) using 4 threads | OpenMP (s) using 4 threads | CUDA (s) using 1024 threads |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1539,9 +1539,9 @@ Parallelization techniques are crucial to utilize modern computing power and tac
   threads |
 | Efficiency  | 1 | 0.997828427 | 0.797445133 | 0.72188803 | 0.023845008 |
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%206.png)
+![Untitled](Images/Untitled%206.png)
 
-![Untitled](Final%20Project%20N-Problem%20Simulation%207c643b73a56d43438f4f23d59dfcc6d2/Untitled%207.png)
+![Untitled](Images/Untitled%207.png)
 
 ### **Average Iteration Time and Total Time**
 
