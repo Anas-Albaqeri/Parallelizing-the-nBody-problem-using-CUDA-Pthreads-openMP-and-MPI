@@ -1,8 +1,4 @@
-# Final Project: N-Problem Simulation
-
-**Anas Al Baqeri: 202004427** 
-
-**Mohammad Shahin : 202105493**
+# N-Problem Simulation
 
 ---
 
