@@ -1,4 +1,4 @@
-# N-Problem Simulation
+# nBody-Problem Simulation
 
 ---
 
